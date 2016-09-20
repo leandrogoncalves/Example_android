@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">CalcularMedia</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Calcular Media</string>
+    <string name="action_settings">Configuracoes</string>
+    <string name="lblNome">Nome do aluno</string>
+    <string name="lblP1">Nota da primeira prova</string>
+    <string name="lblP2">Nota da segunda prova</string>
+    <string name="lblMedia">Média final</string>
+    <string name="lblSituacao">Situação</string>
+    <string name="btnCalcular">Calcular média</string>
 </resources>

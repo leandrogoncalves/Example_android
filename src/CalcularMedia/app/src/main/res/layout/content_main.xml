@@ -16,7 +16,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nome do aluno" />
+        android:text="@string/lblNome" />
     <EditText android:id="@+id/txtNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nota da primeira prova" />
+        android:text="@string/lblP1" />
     <EditText android:id="@+id/txtP1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -32,7 +32,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nota da segunda prova" />
+        android:text="@string/lblP2" />
     <EditText android:id="@+id/txtP2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -40,7 +40,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Média final" />
+        android:text="@string/lblMedia" />
     <EditText android:id="@+id/txtMedia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -48,7 +48,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Situação" />
+        android:text="@string/lblSituacao" />
     <EditText android:id="@+id/txtSituacao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -56,6 +56,6 @@
     <Button android:id="@+id/btnCalcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calcular média"/>
+        android:text="@string/btnCalcular"/>
 
 </LinearLayout>

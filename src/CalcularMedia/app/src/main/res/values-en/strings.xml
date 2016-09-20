@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculate Average</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnCalcular">Calculate Average</string>
+    <string name="lblMedia">Final Average</string>
+    <string name="lblNome">Name</string>
+    <string name="lblP1">Note 1</string>
+    <string name="lblP2">Note 2</string>
+    <string name="lblSituacao">Status</string>
+</resources>

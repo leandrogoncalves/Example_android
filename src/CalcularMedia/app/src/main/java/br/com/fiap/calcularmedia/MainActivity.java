@@ -1,5 +1,6 @@
 package br.com.fiap.calcularmedia;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,12 +14,12 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText editNome = (EditText) findViewById(R.id.txtNome);
-    EditText editP1 = (EditText) findViewById(R.id.txtP1);
-    EditText editP2 = (EditText) findViewById(R.id.txtP2);
-    EditText editSituacao = (EditText) findViewById(R.id.txtSituacao);
-    EditText editMedia = (EditText) findViewById(R.id.txtMedia);
-    Button botaoCalcular = (Button) findViewById(R.id.btnCalcular);
+    EditText editNome;
+    EditText editP1;
+    EditText editP2;
+    EditText editSituacao;
+    EditText editMedia;
+    Button botaoCalcular;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,17 +37,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        editNome = (EditText) findViewById(R.id.txtNome);
+        editP1 = (EditText) findViewById(R.id.txtP1);
+        editP2 = (EditText) findViewById(R.id.txtP2);
+        editSituacao = (EditText) findViewById(R.id.txtSituacao);
+        editMedia = (EditText) findViewById(R.id.txtMedia);
+        botaoCalcular = (Button) findViewById(R.id.btnCalcular);
+
         botaoCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 double p1 = Double.parseDouble(editP1.getText().toString());
                 double p2 = Double.parseDouble(editP2.getText().toString());
                 double media = (p1+p2) /2 ;
+
                 editMedia.setText(String.valueOf(media));
+
                 String situacao;
                 if (media >= 6){
+                    editSituacao.setTextColor(Color.BLUE);
                     situacao = "Aprovado";
                 }else{
+                    editSituacao.setTextColor(Color.RED);
                     situacao = "Reprovado";
                 }
                 editSituacao.setText(situacao);
